@@ -1,0 +1,130 @@
+varname,varkey,type
+
+# ---------------------------------------------------------------------------- #
+# Identification (present in all three files; only the h-file copy is kept)
+# ---------------------------------------------------------------------------- #
+hid,id,
+hhid,sa0010,
+pais,sa0100,
+año,sa0200,
+sa0110,sa0110,
+hhwg,hw0010,
+
+# ---------------------------------------------------------------------------- #
+# Main dwelling — basic (hb section, h file)
+# ---------------------------------------------------------------------------- #
+hb0600,hb0600,
+hb0700,hb0700,
+hb0800,hb0800,
+hb0900,hb0900,
+hb1000,hb1000,
+
+# Main dwelling — mortgages and acquisition: hb1201a:hb1301 in the R code.
+# This is a positional range; prefix selection captures all hb12xx and hb13xx
+# columns from the h file. Verify against your data and add/remove as needed.
+hb12_range,hb12,prefix
+hb13_range,hb13,prefix
+
+# ---------------------------------------------------------------------------- #
+# Credit access
+# ---------------------------------------------------------------------------- #
+hc1300,hc1300,
+hc1310a,hc1310a,
+hc1310b,hc1310b,
+hc1320,hc1320,
+hc1400,hc1400,
+
+# ---------------------------------------------------------------------------- #
+# Transfers and income from capital
+# ---------------------------------------------------------------------------- #
+hg0110,hg0110,
+hg0210,hg0210,
+hg0310,hg0310,
+hg0410,hg0410,
+hg0510,hg0510,
+hg0600,hg0600,
+hg0610,hg0610,
+hg0700,hg0700,
+hg0800,hg0800,
+
+# ---------------------------------------------------------------------------- #
+# Inheritances and gifts received (hh section)
+# ---------------------------------------------------------------------------- #
+hh0110,hh0110,
+hh0201,hh0201,
+hh0202,hh0202,
+hh0203,hh0203,
+hh0301a,hh0301a,
+hh0301b,hh0301b,
+hh0301c,hh0301c,
+hh0301d,hh0301d,
+hh0301e,hh0301e,
+hh0301f,hh0301f,
+hh0301g,hh0301g,
+hh0301h,hh0301h,
+hh0301i,hh0301i,
+hh0401,hh0401,
+hh0402,hh0402,
+hh0403,hh0403,
+hh0501,hh0501,
+hh0502,hh0502,
+hh0503,hh0503,
+hh0601,hh0601,
+hh0602,hh0602,
+hh0603,hh0603,
+
+# ---------------------------------------------------------------------------- #
+# Consumption / saving / borrowing (hi section)
+# ---------------------------------------------------------------------------- #
+hi0220,hi0220,
+hi0300,hi0300,
+hi0310,hi0310,
+hi0400a,hi0400a,
+hi0400b,hi0400b,
+hi0400c,hi0400c,
+hi0400d,hi0400d,
+hi0400e,hi0400e,
+hi0400f,hi0400f,
+hi0400g,hi0400g,
+hi0400h,hi0400h,
+hi0400i,hi0400i,
+hi0400j,hi0400j,
+hi0700a,hi0700a,
+hi0700b,hi0700b,
+hi0700c,hi0700c,
+hi0700d,hi0700d,
+hi0700e,hi0700e,
+hi0700f,hi0700f,
+hi0700g,hi0700g,
+hi0800,hi0800,
+
+# ---------------------------------------------------------------------------- #
+# Non-core household variables (hn file)
+# ---------------------------------------------------------------------------- #
+hnh0500,hnh0500,
+hnh0600,hnh0600,
+hnh0700,hnh0700,
+hnh0800,hnh0800,
+
+# ---------------------------------------------------------------------------- #
+# Derived variables (d file)
+# ---------------------------------------------------------------------------- #
+dhidh1,dhidh1,
+edad,dhageh1,
+edad5,dhageh1b,
+dheduh1,dheduh1,
+dhhtype,dhhtype,
+di1100,di1100,
+di1200,di1200,
+pens,di1510,
+di1600,di1600,
+di1610,di1610,
+di2000,di2000,
+expH,doinherit,
+cons,docogood,
+wlth,dn3001,
+dnnla,dnnla,
+home,da1110,
+otherre,da1120,
+vehicle,da1130,
+jewels,da1131,
