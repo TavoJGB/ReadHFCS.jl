@@ -18,3 +18,7 @@ function get_select_fn(vars)
         return sname in explicit_keys || any(startswith(sname, p) for p in prefix_keys)
     end
 end
+
+# Panel helpers
+get_prev_year(year::Int) = get(HFCS_PREV_YEAR, year, nothing)
+get_wave_gap(year::Int) = get(HFCS_WAVE_GAP, year, nothing)
